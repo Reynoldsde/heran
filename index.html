@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en-ET" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heran Speciality Dental Clinic | Best Dentist in Addis Ababa, Ethiopia</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Heran Speciality Dental Clinic offers top-rated dental services in Addis Ababa, Ethiopia. Specializing in cosmetic dentistry, dental implants, and orthodontics. Book your appointment today for a radiant smile!">
+    <meta name="keywords" content="dentist in Addis Ababa, dental clinic Ethiopia, cosmetic dentistry Addis Ababa, dental implants Ethiopia, orthodontist Addis Ababa, best dentist Bole, teeth whitening Ethiopia, Heran Dental Clinic">
+    <meta name="author" content="Heran Speciality Dental Clinic">
+    <link rel="canonical" href="https://www.herandental.com/">
+    <meta name="robots" content="index, follow">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+    
+    <!-- Animation Libraries -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Dentist",
+      "name": "Heran Speciality Dental Clinic",
+      "image": "https://i.imgur.com/ngMwURN.jpeg",
+      "url": "https://www.herandental.com/",
+      "telephone": "+251969873939",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "enkulal fabrica, Swaziland St",
+        "addressLocality": "Addis Ababa",
+        "addressCountry": "ET"
+      },
+      "openingHoursSpecification": [{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"09:00","closes":"18:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"10:00","closes":"16:00"}],
+      "sameAs": ["https://web.facebook.com/profile.php?id=61570845038037#","https://www.instagram.com/her_an_speciality","https://t.me/herandental","https://www.tiktok.com/@heranspecialitydent1616"] 
+    }
+    </script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-blue': '#00AEEF', // Main vibrant blue
+                        'brand-blue-dark': '#008abe',
+                        'brand-bg': '#F7FAFC', // Very light gray/off-white
+                        'brand-text': '#2D3748', // Dark charcoal text
+                        'brand-text-light': '#718096', // Lighter gray for subtext
+                    },
+                    fontFamily: {
+                        'sans': ['Poppins', 'sans-serif'],
+                        'serif': ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .section-divider {
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+            transform: rotate(180deg);
+        }
+        .section-divider svg {
+            position: relative;
+            display: block;
+            width: calc(100% + 1.3px);
+            height: 90px;
+        }
+        .section-divider .shape-fill {
+            fill: #F7FAFC; /* Matches the next section's background */
+        }
+        .section-divider-bottom .shape-fill {
+            fill: #2D3748; /* Matches footer background */
+        }
+
+        .animated-footer-bg {
+            background: linear-gradient(-45deg, #2d3748, #1a202c, #2d3748, #4a5568);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+        }
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* Micro-motion typography */
+        .hero-title .char, .hero-subtitle .word {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgba(0, 174, 239, 0.1), 0 10px 10px -5px rgba(0, 174, 239, 0.04);
+            border-color: #00AEEF;
+        }
+    </style>
+</head>
+<body class="text-brand-text bg-brand-bg font-sans">
+
+    <!-- Preloader -->
+    <div id="preloader" class="fixed top-0 left-0 w-full h-full bg-white flex flex-col justify-center items-center z-[100] transition-opacity duration-500">
+        <img src="https://cdn.pixabay.com/animation/2023/04/29/08/43/08-43-00-635_512.gif" alt="Loading Animation" class="w-40 h-40">
+        <p class="text-brand-text font-semibold mt-4 text-lg">Welcome to Heran Speciality Dental Clinic</p>
+    </div>
+
+    <!-- Header -->
+    <header id="header" class="bg-white/80 backdrop-blur-md fixed w-full z-50 transition-all duration-300">
+        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="#" class="flex items-center space-x-3">
+                <img src="https://i.imgur.com/ngMwURN.jpeg" alt="Heran Clinic Logo" class="h-12 w-12 object-cover rounded-full border-2 border-brand-blue">
+                <span class="font-bold text-xl text-brand-text">Heran Dental</span>
+            </a>
+            <div class="hidden lg:flex items-center space-x-8">
+                <a href="#about" class="text-gray-600 hover:text-brand-blue font-medium transition-colors duration-300">About Us</a>
+                <a href="#services" class="text-gray-600 hover:text-brand-blue font-medium transition-colors duration-300">Services</a>
+                <a href="#gallery" class="text-gray-600 hover:text-brand-blue font-medium transition-colors duration-300">Gallery</a>
+                <a href="#contact" class="text-gray-600 hover:text-brand-blue font-medium transition-colors duration-300">Contact</a>
+            </div>
+            <a href="#contact" id="nav-book-btn" class="magnetic-button hidden lg:inline-block bg-brand-blue text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-brand-blue-dark transition-all duration-300 transform hover:scale-105">
+                <span>Book Appointment</span>
+            </a>
+            <button id="mobile-menu-button" class="lg:hidden text-brand-text focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </nav>
+        <div id="mobile-menu" class="hidden lg:hidden px-6 pt-2 pb-4 bg-white/95">
+            <a href="#about" class="block py-2 text-gray-600 hover:text-brand-blue">About Us</a>
+            <a href="#services" class="block py-2 text-gray-600 hover:text-brand-blue">Services</a>
+            <a href="#gallery" class="block py-2 text-gray-600 hover:text-brand-blue">Gallery</a>
+            <a href="#contact" class="block py-2 text-gray-600 hover:text-brand-blue">Contact</a>
+            <a href="#contact" class="mt-4 block text-center bg-brand-blue text-white font-bold py-3 px-6 rounded-lg">Book Appointment</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="relative bg-white pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
+            <div class="container mx-auto px-6 z-10 relative">
+                <div class="flex flex-col lg:flex-row items-center gap-12">
+                    <div class="lg:w-1/2 text-center lg:text-left">
+                        <h1 class="hero-title font-serif text-5xl md:text-6xl font-extrabold text-brand-text leading-tight mb-4">Dental Care</h1>
+                        <p class="hero-subtitle text-lg text-brand-text-light max-w-lg mx-auto lg:mx-0 mb-8">Changing Lives One Smile At A Time. Experience the future of dental excellence with compassionate care and state-of-the-art technology.</p>
+                        <a href="#services" id="hero-services-btn" class="magnetic-button inline-block bg-brand-blue text-white font-bold py-4 px-8 rounded-lg shadow-xl hover:bg-brand-blue-dark transition-all duration-300 transform hover:scale-105">
+                           <span>View All Services</span>
+                        </a>
+                    </div>
+                    <div class="lg:w-1/2 flex justify-center">
+                         <div class="relative w-full max-w-md">
+                            <div class="absolute -top-4 -left-4 w-full h-full bg-brand-blue rounded-2xl transform rotate-[-6deg] opacity-20"></div>
+                            <div class="absolute -bottom-4 -right-4 w-full h-full border-4 border-brand-blue rounded-2xl transform rotate-[4deg]"></div>
+                            <img src="https://i.imgur.com/v3LQlSY.jpeg" alt="Beautiful white smile" class="relative w-full h-auto rounded-2xl shadow-2xl z-10">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Bar -->
+        <section class="bg-brand-blue text-white py-12 relative">
+             <div class="container mx-auto px-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+                    <div class="flex flex-col items-center p-4 reveal-card">
+                        <div class="bg-white/20 p-4 rounded-full mb-4"><svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path></svg></div>
+                        <h3 class="font-bold text-xl mb-2">Excellent Services</h3>
+                        <p class="text-sm opacity-90">Top-tier dental care from internationally trained specialists.</p>
+                    </div>
+                    <div class="flex flex-col items-center p-4 reveal-card">
+                        <div class="bg-white/20 p-4 rounded-full mb-4"><svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg></div>
+                        <h3 class="font-bold text-xl mb-2">Guaranteed Work</h3>
+                        <p class="text-sm opacity-90">We stand by the quality and longevity of our treatments.</p>
+                    </div>
+                    <div class="flex flex-col items-center p-4 reveal-card">
+                        <div class="bg-white/20 p-4 rounded-full mb-4"><svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"></path></svg></div>
+                        <h3 class="font-bold text-xl mb-2">Dental Implants</h3>
+                        <p class="text-sm opacity-90">Permanent solutions for missing teeth that look and feel natural.</p>
+                    </div>
+                    <div class="flex flex-col items-center p-4 reveal-card">
+                        <div class="bg-white/20 p-4 rounded-full mb-4"><svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg></div>
+                        <h3 class="font-bold text-xl mb-2">24/7 Services</h3>
+                        <p class="text-sm opacity-90">Emergency dental support available whenever you need it.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Section Divider -->
+            <div class="section-divider">
+                <svg data-name="Layer 1" xmlns="http://www.w.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+                </svg>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="py-28 bg-brand-bg">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16 reveal-card">
+                    <h2 class="font-serif text-4xl font-bold text-brand-text mb-2">Welcome to Heran Dental</h2>
+                    <p class="text-brand-text-light max-w-3xl mx-auto">The Pinnacle of Dental Excellence in Ethiopia, where we transcend traditional care.</p>
+                </div>
+                <div class="flex flex-col lg:flex-row items-center gap-16">
+                    <div class="lg:w-1/2 reveal-left">
+                        <img src="https://i.imgur.com/7gQSEtS.jpeg" alt="Inside the Heran Dental Clinic waiting area" class="rounded-lg shadow-2xl w-full h-auto">
+                    </div>
+                    <div class="lg:w-1/2 reveal-right">
+                        <h3 class="font-serif text-3xl font-bold text-brand-text mb-4">Make your dream smile a reality!</h3>
+                        <p class="text-brand-text-light mb-4 leading-relaxed">Our distinguished team combines cutting-edge technology with proven techniques, creating a serene atmosphere where your comfort is paramount. We're not just your dentists—we're your partners in crafting a future of vibrant health and confident smiles.</p>
+                        <div class="mt-8 flex justify-center lg:justify-start">
+                            <img src="https://img.freepik.com/premium-photo/black-woman-teeth-smile-dental-care-whitening-oral-mouth-treatment-closeup-happy-african-american-female-model-smiling-dentist-results-healthcare-clean-tooth-hygiene_590464-152295.jpg" alt="Before and after dental treatment" class="w-full max-w-sm rounded-lg shadow-lg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Full Services Section -->
+        <section id="services" class="py-28 bg-white relative">
+            <div class="section-divider-bottom" style="transform: rotate(0); top:-1px; bottom:auto;">
+                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill" style="fill: #F7FAFC;"></path>
+                </svg>
+            </div>
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="font-serif text-4xl font-bold text-brand-text mb-2">Our Signature Dental Services</h2>
+                <p class="text-brand-text-light max-w-3xl mx-auto mb-16">From preventative care to transformative cosmetic procedures, excellence is our standard.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="service-card border border-gray-200 p-8 text-center rounded-lg shadow-sm transition-all duration-300 reveal-card">
+                         <div class="mb-4 text-brand-blue"><svg class="h-12 w-12 mx-auto" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456zM16.898 20.624L16.5 21.75l-.398-1.126a3.375 3.375 0 00-2.455-2.456L12.75 18l1.126-.398a3.375 3.375 0 002.455-2.456L16.5 14.25l.398 1.126a3.375 3.375 0 002.456 2.456L20.25 18l-1.126.398a3.375 3.375 0 00-2.456 2.456z" /></svg></div>
+                        <h3 class="text-xl font-bold text-brand-text mb-2">Cosmetic Dentistry</h3>
+                        <p class="text-brand-text-light text-sm">Reimagine your smile with bespoke veneers, whitening, and bonding for a luminous, natural-looking result.</p>
+                    </div>
+                    <div class="service-card border border-gray-200 p-8 text-center rounded-lg shadow-sm transition-all duration-300 reveal-card">
+                        <div class="mb-4 text-brand-blue"><svg class="h-12 w-12 mx-auto" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 6.75h7.5M8.25 12h7.5m-7.5 5.25h7.5M3 3h18v18H3V3z" /></svg></div>
+                        <h3 class="text-xl font-bold text-brand-text mb-2">Dental Implants</h3>
+                        <p class="text-brand-text-light text-sm">Rediscover a complete smile with our sophisticated, permanent solution for missing teeth.</p>
+                    </div>
+                    <div class="service-card border border-gray-200 p-8 text-center rounded-lg shadow-sm transition-all duration-300 reveal-card">
+                        <div class="mb-4 text-brand-blue"><svg class="h-12 w-12 mx-auto" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15.362 5.214A8.252 8.252 0 0112 21 8.25 8.25 0 016.038 7.048l.002-.001a8.25 8.25 0 019.324-1.834z" /><path stroke-linecap="round" stroke-linejoin="round" d="M14.25 10.5a.75.75 0 00-1.5 0v3h-3a.75.75 0 000 1.5h3v3a.75.75 0 001.5 0v-3h3a.75.75 0 000-1.5h-3v-3z" /></svg></div>
+                        <h3 class="text-xl font-bold text-brand-text mb-2">Orthodontics</h3>
+                        <p class="text-brand-text-light text-sm">Align your smile to perfection with advanced solutions, including discreet clear aligners and modern braces.</p>
+                    </div>
+                    <div class="service-card border border-gray-200 p-8 text-center rounded-lg shadow-sm transition-all duration-300 reveal-card">
+                        <div class="mb-4 text-brand-blue"><svg class="h-12 w-12 mx-auto" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z" /></svg></div>
+                        <h3 class="text-xl font-bold text-brand-text mb-2">General Dentistry</h3>
+                        <p class="text-brand-text-light text-sm">Proactive, preventative care, including detailed cleanings, durable fillings, and root canals for your family.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="py-28 bg-brand-bg">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16 reveal-card">
+                    <h2 class="font-serif text-4xl font-bold text-brand-text mb-2">Step Inside Our Clinic</h2>
+                    <p class="text-brand-text-light max-w-3xl mx-auto">A clean, modern, and relaxing environment designed for your comfort in Bole, Addis Ababa.</p>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <div class="grid gap-4"><div class="reveal-card"><img class="h-auto max-w-full rounded-lg shadow-md transition-transform duration-300 hover:scale-105" src="https://i.imgur.com/pSnSChg.jpeg" alt="Clinic Interior"></div><div class="reveal-card"><img class="h-auto max-w-full rounded-lg shadow-md transition-transform duration-300 hover:scale-105" src="https://i.imgur.com/g5UtitQ.jpeg" alt="Dental Chair"></div></div>
+                    <div class="grid gap-4"><div class="reveal-card"><img class="h-auto max-w-full rounded-lg shadow-md transition-transform duration-300 hover:scale-105" src="https://i.imgur.com/LNVQ9eC.jpeg" alt="Reception Desk"></div><div class="reveal-card"><img class="h-auto max-w-full rounded-lg shadow-md transition-transform duration-300 hover:scale-105" src="https://i.imgur.com/7gQSEtS.jpeg" alt="Waiting Area"></div></div>
+                    <div class="grid gap-4"><div class="reveal-card"><img class="h-auto max-w-full rounded-lg shadow-md transition-transform duration-300 hover:scale-105" src="https://i.imgur.com/7T4RVdA.jpeg" alt="Dental Equipment"></div><div class="reveal-card"><img class="h-auto max-w-full rounded-lg shadow-md transition-transform duration-300 hover:scale-105" src="https://i.imgur.com/DlH0FJ8.jpeg" alt="Sterilization Room"></div></div>
+                    <div class="grid gap-4"><div class="reveal-card"><img class="h-auto max-w-full rounded-lg shadow-md transition-transform duration-300 hover:scale-105" src="https://i.imgur.com/ZwkiPYW.jpeg" alt="Clinic Exterior"></div></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Transformations Section -->
+        <section id="transformations" class="py-28 bg-white relative">
+            <div class="section-divider-bottom" style="transform: rotate(0); top:-1px; bottom:auto;">
+                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill" style="fill: #F7FAFC;"></path>
+                </svg>
+            </div>
+            <div class="container mx-auto px-6 text-center">
+                <div class="reveal-card">
+                    <h2 class="font-serif text-4xl font-bold text-brand-text mb-2">Life-Changing Transformations</h2>
+                    <p class="text-brand-text-light max-w-3xl mx-auto mb-16">Witness the artistry of our work. These transformations represent renewed confidence and improved quality of life for our patients in Ethiopia.</p>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Image 1: Before -->
+                    <div class="relative rounded-lg overflow-hidden shadow-lg reveal-card group">
+                        <img src="https://i.imgur.com/1tj131t.jpeg" alt="Before cosmetic dentistry treatment" class="w-full h-96 object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div class="absolute top-4 left-4 bg-gray-900/60 text-white px-3 py-1 rounded-full text-sm font-semibold backdrop-blur-sm">Before</div>
+                    </div>
+                    <!-- Image 2: After -->
+                    <div class="relative rounded-lg overflow-hidden shadow-lg reveal-card group">
+                        <img src="https://i.imgur.com/msMYYrz.jpeg" alt="After cosmetic dentistry treatment at Heran Clinic" class="w-full h-96 object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div class="absolute top-4 left-4 bg-brand-blue text-white px-3 py-1 rounded-full text-sm font-semibold">After</div>
+                    </div>
+                    <!-- Image 3: Before -->
+                    <div class="relative rounded-lg overflow-hidden shadow-lg reveal-card group">
+                        <img src="https://i.imgur.com/AyniW4g.jpeg" alt="Patient's smile before orthodontic treatment" class="w-full h-96 object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div class="absolute top-4 left-4 bg-gray-900/60 text-white px-3 py-1 rounded-full text-sm font-semibold backdrop-blur-sm">Before</div>
+                    </div>
+                    <!-- Image 4: After -->
+                    <div class="relative rounded-lg overflow-hidden shadow-lg reveal-card group">
+                        <img src="https://i.imgur.com/C8gU2bt.jpeg" alt="Patient's perfect smile after orthodontic treatment" class="w-full h-96 object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div class="absolute top-4 left-4 bg-brand-blue text-white px-3 py-1 rounded-full text-sm font-semibold">After</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-28 bg-white relative">
+            <div class="section-divider-bottom" style="transform: rotate(0); top:-1px; bottom:auto;">
+                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill" style="fill: #F7FAFC;"></path>
+                </svg>
+            </div>
+             <div class="container mx-auto px-6">
+                 <div class="text-center mb-16 reveal-card">
+                    <h2 class="font-serif text-4xl font-bold text-brand-text mb-2">Book Your Appointment</h2>
+                    <p class="text-brand-text-light max-w-3xl mx-auto">Contact our team to schedule your visit. We look forward to welcoming you.</p>
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-5 gap-12">
+                    <div class="lg:col-span-2 reveal-left space-y-8">
+                        <div class="bg-gray-50 p-8 rounded-lg border border-gray-200 h-full">
+                           <h3 class="text-2xl font-bold text-brand-text mb-6">Clinic Information</h3>
+                           <div class="space-y-4 text-brand-text-light">
+                               <div class="flex items-start"><svg class="w-6 h-6 mr-3 text-brand-blue flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg><span>enkulal fabrica, Swaziland St<br>Addis Ababa, Ethiopia</span></div>
+                               <div class="flex items-center"><svg class="w-6 h-6 mr-3 text-brand-blue flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg><span>+251 96 987 3939</span></div>
+                               <div class="flex items-center"><svg class="w-6 h-6 mr-3 text-brand-blue flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg><span>contact@herandental.com</span></div>
+                           </div>
+                           <h4 class="text-xl font-bold text-brand-text mt-8 mb-2">Clinic Hours</h4>
+                           <div class="text-brand-text-light"><p>Mon - Fri: 9:00 AM - 6:00 PM</p><p>Saturday: 10:00 AM - 4:00 PM</p></div>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-3 reveal-right">
+                        <div class="bg-gray-50 p-8 rounded-lg border border-gray-200 h-full">
+                            <h3 class="text-2xl font-bold text-brand-text mb-4">Send Us a Message</h3>
+                            <form action="#" method="POST">
+                                <div class="mb-4"><label for="name" class="block text-brand-text-light text-sm font-bold mb-2">Full Name</label><input type="text" id="name" required class="shadow-sm appearance-none border border-gray-300 rounded w-full py-3 px-4 text-gray-700 bg-white leading-tight focus:outline-none focus:ring-2 focus:ring-brand-blue/50"></div>
+                                <div class="mb-4"><label for="email" class="block text-brand-text-light text-sm font-bold mb-2">Email</label><input type="email" id="email" required class="shadow-sm appearance-none border border-gray-300 rounded w-full py-3 px-4 text-gray-700 bg-white leading-tight focus:outline-none focus:ring-2 focus:ring-brand-blue/50"></div>
+                                <div class="mb-6"><label for="message" class="block text-brand-text-light text-sm font-bold mb-2">Message</label><textarea id="message" rows="4" required class="shadow-sm appearance-none border border-gray-300 rounded w-full py-3 px-4 text-gray-700 bg-white leading-tight focus:outline-none focus:ring-2 focus:ring-brand-blue/50"></textarea></div>
+                                <div class="text-right">
+                                    <button type="submit" id="form-submit-btn" class="magnetic-button bg-brand-blue text-white font-bold py-3 px-8 rounded-lg shadow-lg hover:bg-brand-blue-dark transition-all duration-300 transform hover:scale-105">
+                                        <span>Send Message</span>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-brand-blue text-white py-16 relative">
+         <div class="section-divider-bottom" style="transform: rotate(0); top:-1px; bottom:auto;">
+                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill" style="fill: #ffffff;"></path>
+                </svg>
+            </div>
+        <div class="container mx-auto px-6 text-center">
+            <div class="flex justify-center flex-wrap gap-6 mb-8 text-white"><a href="#about" class="hover:opacity-80 transition-opacity font-medium">About</a><a href="#services" class="hover:opacity-80 transition-opacity font-medium">Services</a><a href="#gallery" class="hover:opacity-80 transition-opacity font-medium">Gallery</a><a href="#contact" class="hover:opacity-80 transition-opacity font-medium">Contact</a></div>
+             <div class="flex justify-center items-center space-x-5 mb-8">
+                <a href="https://web.facebook.com/profile.php?id=61570845038037#" target="_blank" rel="noopener noreferrer" class="transition-transform hover:scale-125"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/04/Facebook_f_logo_%282021%29.svg/2048px-Facebook_f_logo_%282021%29.svg.png" alt="Facebook" class="w-8 h-8"></a>
+                <a href="https://www.instagram.com/her_an_speciality" target="_blank" rel="noopener noreferrer" class="transition-transform hover:scale-125"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" class="w-8 h-8"></a>
+                <a href="https://t.me/herandental" target="_blank" rel="noopener noreferrer" class="transition-transform hover:scale-125"><img src="https://pngdownload.io/wp-content/uploads/2025/07/Telegram-Logo-Icon-Messaging-App.webp" alt="Telegram" class="w-8 h-8"></a>
+                <a href="https://www.tiktok.com/@heranspecialitydent1616" target="_blank" rel="noopener noreferrer" class="transition-transform hover:scale-125"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGNE8AUdAK0Fozn0eEPz9uh8bc7iFQUPUrfg&s" alt="TikTok" class="w-8 h-8 rounded-full"></a>
+             </div>
+             <p class="text-sm text-gray-300">&copy; 2025 Heran Speciality Dental Clinic. All Rights Reserved.</p>
+             <p class="text-sm text-gray-300 mt-2">Built with ❤️ by <a href="http://ibrixdigital.unaux.com" target="_blank" rel="noopener noreferrer" class="underline hover:text-white">Ibrix digital</a></p>
+        </div>
+    </footer>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Preloader
+            const preloader = document.getElementById('preloader');
+            window.addEventListener('load', () => {
+                setTimeout(() => {
+                    preloader.style.opacity = '0';
+                    setTimeout(() => preloader.style.display = 'none', 500);
+                }, 500); // Minimum display time
+            });
+
+            // Mobile Menu
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+            document.querySelectorAll('#mobile-menu a').forEach(link => {
+                link.addEventListener('click', () => mobileMenu.classList.add('hidden'));
+            });
+
+            // Header Scroll Effect
+            const header = document.getElementById('header');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    header.classList.add('py-2', 'shadow-lg');
+                    header.classList.remove('py-3');
+                } else {
+                    header.classList.add('py-3');
+                    header.classList.remove('py-2', 'shadow-lg');
+                }
+            });
+
+            // ScrollReveal Animations
+            const sr = ScrollReveal({
+                distance: '50px',
+                duration: 1200,
+                easing: 'cubic-bezier(0.5, 0, 0, 1)',
+                delay: 200,
+                reset: false,
+            });
+            sr.reveal('.reveal-card', { interval: 150 });
+            sr.reveal('.reveal-left', { origin: 'left' });
+            sr.reveal('.reveal-right', { origin: 'right' });
+            
+            // GSAP Animations
+            // 1. Hero Text Animation
+            const heroTitle = document.querySelector('.hero-title');
+            const heroSubtitle = document.querySelector('.hero-subtitle');
+            heroTitle.innerHTML = heroTitle.textContent.split('').map(char => `<span class="char inline-block">${char === ' ' ? '&nbsp;' : char}</span>`).join('');
+            heroSubtitle.innerHTML = heroSubtitle.textContent.split(' ').map(word => `<span class="word inline-block">${word}&nbsp;</span>`).join('');
+
+            gsap.to('.hero-title .char', {
+                opacity: 1,
+                y: 0,
+                stagger: 0.04,
+                delay: 0.7,
+                ease: 'power3.out'
+            });
+             gsap.to('.hero-subtitle .word', {
+                opacity: 1,
+                y: 0,
+                stagger: 0.05,
+                delay: 1.0,
+                ease: 'power3.out'
+            });
+
+            // 2. Magnetic Buttons
+            const magneticButtons = document.querySelectorAll('.magnetic-button');
+            magneticButtons.forEach(button => {
+                const span = button.querySelector('span');
+                button.addEventListener('mousemove', (e) => {
+                    const { offsetX, offsetY, target } = e;
+                    const { clientWidth, clientHeight } = target;
+                    const x = (offsetX / clientWidth) - 0.5;
+                    const y = (offsetY / clientHeight) - 0.5;
+
+                    gsap.to(button, {
+                        x: x * 30,
+                        y: y * 30,
+                        duration: 0.7,
+                        ease: 'power3.out'
+                    });
+                    if (span) {
+                       gsap.to(span, {
+                            x: x * 15,
+                            y: y * 15,
+                            duration: 0.7,
+                            ease: 'power3.out'
+                        }); 
+                    }
+                });
+                button.addEventListener('mouseleave', () => {
+                    gsap.to([button, span], {
+                        x: 0,
+                        y: 0,
+                        duration: 0.7,
+                        ease: 'elastic.out(1, 0.5)'
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+
+
+
